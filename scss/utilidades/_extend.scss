@@ -1,0 +1,30 @@
+%nombre{ 
+    section{
+        filter: drop-shadow(1px 1px 3px);
+        animation-name: titulos-movimiento;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;              
+        margin: 20px 0;
+        text-align: center;
+        @keyframes titulos-movimiento {
+            to{
+            transform:scale(1);
+            }
+            from{
+                 transform:scale(0.10);
+            }                       
+         }
+        a{
+            font-weight: 10px;
+            padding-right: 10px;
+            color: black;
+            text-decoration: none;
+            }
+            a:hover{
+                background-color:rgb(223, 120, 218);
+                color: white;
+                }  
+    }
+        
+    }
+ 

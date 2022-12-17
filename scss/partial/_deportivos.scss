@@ -1,0 +1,76 @@
+//Nesting
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+/*Inicio del Header*/
+header{
+    .logo{
+        display: flex;
+        align-items: center;
+        img{
+            height: 90px;
+            margin-right: 10px;
+        }
+        img:hover{
+            filter: drop-shadow(1px 1px 1px);
+            transform: scale(1.1);
+                    }
+    }  
+}
+  
+        
+.grid-container{
+    display: grid;
+    background-color: cornsilk;
+    grid-template-areas:
+    "header1 header2 "
+    "menu main "
+    "body1 body2"
+    "footer1 footer2  ";
+}
+.grid-container{
+    div{
+        background-color: rgb(193, 221, 128);
+        text-align: center;
+        color: #000000;
+        padding: 10px;
+        border: 2px solid black;
+        height: 200px;
+    }
+}
+.texto1{
+    grid-area: header1;
+}
+.texto2{
+    grid-area: header2;
+}
+.texto3{
+    grid-area: menu;
+}
+.texto4{
+    grid-area: main;
+}
+.texto5{
+    grid-area: body1;
+}
+.texto6{
+    grid-area: body2;
+}
+.texto1{
+    img{
+        height: 200px;
+        @include margenes(auto); 
+    }
+}
+.texto3{
+    img{
+        @include medidas (500px, 205px);
+        @include margenes(auto) ;
+    }
+}
+.texto5{
+    img{
+        @include medidas (500px, 205px); 
+        @include margenes(auto); 
+    }
+}
+

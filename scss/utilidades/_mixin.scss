@@ -1,0 +1,9 @@
+//mixin con parametros
+@mixin medidas($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin margenes($margen){
+     margin: $margen;
+}
