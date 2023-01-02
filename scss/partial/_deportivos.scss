@@ -57,19 +57,19 @@ header{
 }
 .texto1{
     img{
-        height: 200px;
+        height: 150px;
         @include margenes(auto); 
     }
 }
 .texto3{
     img{
-        @include medidas (500px, 205px);
+        @include medidas (400px, 205px);
         @include margenes(auto) ;
     }
 }
 .texto5{
     img{
-        @include medidas (500px, 205px); 
+        @include medidas (400px, 205px); 
         @include margenes(auto); 
     }
 }

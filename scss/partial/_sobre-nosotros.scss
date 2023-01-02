@@ -15,14 +15,15 @@
      .sobre-nosotros{
           display: flex;
           justify-content: center;
+          align-items: center;
             img{
-                width: 40%;
+                width: 30%;
                 text-align: center;   
             }
             .parrafo{       
                 margin: 2em; 
                 width: 40%;
-                font-size: 15px;
+                font-size: 1.5rem;
                 text-align: center;
                 color:black;
             }

@@ -14,10 +14,16 @@
   /*Iniico del Body*/
     body{
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
         "heador"
         "maino"
+        "div"
+        "titulo1"
+        "titulo2"
+        "titulo22"
+        "carrousel"
         "footero";
+       
         background: $gris-fondo1;
         margin: 1rem;
         padding: 1rem;
@@ -26,11 +32,11 @@
         /*Inicio del Header*/
     header{
         display: flex;
-        grid-area: heador;
-    background-color: $amarillo-fondo2;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+        grid-area: "heador";
+        background-color: $amarillo-fondo2;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
         .logo{
             display: flex;
             align-items: center;
@@ -64,18 +70,23 @@
                 margin: 10px 0px;
                 }
             .servicios{
-                text-align: center;
-                margin: 10px 0;
+                
                 display: flex;
+                text-align: center;
+                margin: 35px 0;
                 .servicios__card{
                     h3{
-                        font-size: 1.5rem; 
+                        font-size: 2.0rem; 
                         text-align: center;
                         margin: 10px 0px;
                                            
                     }
                     img{
                          border-radius: 15px;
+                         text-align: center;
+                     }
+                     p{
+                        font-size: 1.3rem;
                      }
             }
         }
@@ -83,6 +94,7 @@
     }
     /*Inicio de Footer*/
     footer{
+        font-size: 1.5rem;
         grid-area: footero;
         background-color: rgb(100, 75, 75);
         padding: 2em 0;

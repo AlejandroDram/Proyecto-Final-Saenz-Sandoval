@@ -13,7 +13,7 @@
 /*Iniico del Body*/
 body {
   display: grid;
-  grid-template-areas: "heador" "maino" "footero";
+  grid-template-areas: "heador" "maino" "div" "titulo1" "titulo2" "titulo22" "carrousel" "footero";
   background: #c7cac5;
   margin: 1rem;
   padding: 1rem;
@@ -21,7 +21,7 @@ body {
   /*Inicio del Header*/ }
   body header {
     display: flex;
-    grid-area: heador;
+    grid-area: "heador";
     background-color: #caf74e;
     justify-content: space-between;
     align-items: center;
@@ -49,18 +49,22 @@ main {
     text-align: center;
     margin: 10px 0px; }
   main div .servicios {
+    display: flex;
     text-align: center;
-    margin: 10px 0;
-    display: flex; }
+    margin: 35px 0; }
     main div .servicios .servicios__card h3 {
-      font-size: 1.5rem;
+      font-size: 2.0rem;
       text-align: center;
       margin: 10px 0px; }
     main div .servicios .servicios__card img {
-      border-radius: 15px; }
+      border-radius: 15px;
+      text-align: center; }
+    main div .servicios .servicios__card p {
+      font-size: 1.3rem; }
 
 /*Inicio de Footer*/
 footer {
+  font-size: 1.5rem;
   grid-area: footero;
   background-color: #644b4b;
   padding: 2em 0;
@@ -121,16 +125,16 @@ header .logo {
   grid-area: body2; }
 
 .texto1 img {
-  height: 200px;
+  height: 150px;
   margin: auto; }
 
 .texto3 img {
-  width: 500px;
+  width: 400px;
   height: 205px;
   margin: auto; }
 
 .texto5 img {
-  width: 500px;
+  width: 400px;
   height: 205px;
   margin: auto; }
 
@@ -146,29 +150,43 @@ header .logo {
   padding: 0;
   box-sizing: border-box; }
 
+.titulo1 {
+  text-align: center;
+  grid-area: titulo1; }
+
+.titulo2 {
+  text-align: center;
+  grid-area: titulo2; }
+
+.titulo22 {
+  text-align: center;
+  grid-area: titulo22; }
+
 .titulo-clasico {
   text-align: center; }
 
 .carro {
+  grid-area: div;
   display: flex;
   text-align: center; }
 
 .carro-hijo1 {
-  width: 50; }
+  width: 60%; }
 
 .carro-hijo2 {
-  width: 50%; }
+  height: 60px; }
 
 .carro-hijo3 {
-  width: 50%; }
+  width: 60%; }
 
 /*Inicio del Carrousel*/
 .carrousel {
+  grid-area: carrousel;
   width: 100%; }
 
 .conteCarrousel {
   width: 100%;
-  height: 200px;
+  height: 160px;
   overflow: hidden; }
 
 .itemCarrousel {
@@ -215,7 +233,7 @@ header .logo {
   color: gray; }
 
 .itemCarrouselArrows a {
-  color: white; }
+  color: black; }
 
 @keyframes titulos-movimiento {
   to {
@@ -237,14 +255,15 @@ header .logo {
 
 .sobre-nosotros {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   .sobre-nosotros img {
-    width: 40%;
+    width: 30%;
     text-align: center; }
   .sobre-nosotros .parrafo {
     margin: 2em;
     width: 40%;
-    font-size: 15px;
+    font-size: 1.5rem;
     text-align: center;
     color: black; }
   .sobre-nosotros h1 {
@@ -290,8 +309,8 @@ nav section {
     color: white; }
 
 .contacto-formulario div {
-  font-size: 20px;
-  margin: 60px; }
+  font-size: 30px;
+  margin: 50px; }
 
 .contato-formulario input {
   font-size: 25px; }
